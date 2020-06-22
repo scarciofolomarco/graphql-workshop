@@ -1,0 +1,19 @@
+type Query {
+  getForm(id: ID!): Form!
+}
+
+# type Mutation {
+#   updateForm(form: Form): Form!
+# }
+
+type Form {
+  id: ID!
+  title: String
+  thankyou_screens: [ThankyouScreen]
+}
+
+type ThankyouScreen {
+  id: ID
+  ref: String
+  title: String
+}
